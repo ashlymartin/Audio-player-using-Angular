@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Hello Bulma!</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+    </head>
+  <body>
+    <script src="~bulma-carousel/dist/js/bulma-carousel.min.js"></script>
+  	<section class="hero is-link is-fullheight video">
+      
+  <!-- Hero head: will stick at the top -->
+  <div class="hero-video">
+    <video poster="" id="bgvid" playsinline autoplay muted loop>
+        
+        <source src="/assets/img/bgvdo.mp4" type="video/mp4">
+    </video>
+</div>
+
+  <div class="hero-head">
+    <header class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" [routerLink]="['']">
+            <img src="/assets/img/Logo Final Tata Blue.png">
+          </a>
+          <span class="navbar-menu" data-target="navbarMenuHeroC">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenuHeroC" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item" [routerLink]="['']">
+              Home
+            </a>
+            <a class="navbar-item is-active" >
+              Login/Signup
+            </a>
+            <!--<a class="navbar-item" [routerLink]="['register']">
+              Signup
+            </a>-->
+                        
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <!-- Hero content: will be in the middle -->
+  <div class="hero-body">
+    <div *ngIf="!isSignedIn">
+    
+      <div  class="container p-5">
+        
+          <div class="offset-10 col-4"> 
+            <div class="card bg-dark text-white">
+              <div class="card-header bg-dark text-white font-weight-bold">
+              Login
+              </div>
+              <div class="card card-body bg-dark text-white">
+                <div style="color: rgb(222, 247, 0); margin-bottom: 20px; text-align:center;" *ngIf="accountErrorMessage">{{ accountErrorMessage }}</div>
+                <form [formGroup]="login">
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input id="email" formControlName="email" type="email" class="form-control"  #email>
+                    <label class="text-danger" *ngIf="login.controls['email'].hasError('required')">
+                      Email is Required!
+                    </label>
+                    <label class="text-danger" *ngIf="login.controls['email'].hasError('email')">
+                      Enter a valid email address!
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input id="password" formControlName="password" type="password" class="form-control" #password>
+                     <label class="text-danger col" *ngIf="login.controls['password'].hasError('required')">
+                      Password is Required!
+                    </label>
+                    <label class="text-danger col" *ngIf="login.controls['password'].hasError('minlength')">
+                      Must be at least 8 characters!
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <button [disabled]="login.invalid" type="submit" class="btn btn-primary btn-block font-weight-bold" (click)="onSignin(email.value,password.value)">Login</button>
+                    <a [routerLink]="['/register']" class="btn btn-link">Register</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+      </div>
+      
+      </div>
+    
+  </div>
+
+  <!-- Hero footer: will stick at the bottom -->
+  <!--<div class="hero-foot">
+    <nav class="tabs is-boxed is-fullwidth">
+      <div class="container">
+        
+        <ul>
+          
+          <li>
+            <a [routerLink]="['login']">
+            International
+            </a>
+        </li>
+          <li>
+            <a [routerLink]="['login']">
+              Trending
+            </a>
+          </li>
+          <li>
+            <a [routerLink]="['login']">
+              Regional
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+  </div>-->
+</section>	
+</body>
+</html>
+
+
+
+

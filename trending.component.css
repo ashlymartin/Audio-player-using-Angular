@@ -1,0 +1,40 @@
+.horizontal-scroll{
+    overflow-x:scroll;
+    white-space:nowrap;
+}
+.w3-card-4{
+    display: inline-block;
+    width: 400px;
+    width: 400px;
+    margin:10px;
+    height: 200px;
+}
+.bar{
+    position: fixed;
+    bottom:15px;
+    left:15px;
+    right:15px;
+    height:80px;
+    background-color:rgb(32, 31, 31);
+    opacity: 0.85;
+    border-radius: 12px;
+    
+    
+}
+#myinput {
+    background: white;
+    border: none;
+    border-radius: 0px;
+    height: 4px;
+    width: 356px;
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+  }
+
+h2{
+    color: grey;
+}
+p{
+    cursor:pointer;
+}

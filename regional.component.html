@@ -1,0 +1,227 @@
+<app-header></app-header>
+<body>
+
+<br>
+<br>
+<br>
+<br>
+<style>
+    /* width */
+    ::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1; 
+      height: 10px;
+    }
+     
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #888; 
+      height: 10px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555; 
+      height: 10px;
+    }
+    </style>
+
+  
+    
+  
+    
+<!--<ul>
+    <li *ngFor="let file of files" (click)="openFile(file.url)" style="font-size:18px; color:blue; font-style: bold;">{{file.name}}</li>
+</ul>-->
+<span class="d-block p-2 bg-dark text-white">           
+<h2>Hindi Songs</h2>
+<div class="horizontal-scroll">
+    <div class="w3-card-4">
+        <img src="./assets/imgs/muq.jpg" alt="Alps" style="width:100%;height: 100%;">
+        <div class="w3-container w3-center">
+         <p *ngFor="let file of files" (click)="openFile(file.url)" style="color: white; font-style: italic;font-size: 20px;">{{file.name}}</p>
+        </div>
+    </div>  
+    <div class="w3-card-4">
+        <img src="./assets/imgs/sh.jpg" alt="Alps" style="width:100%;height:100%;">
+        <div class="w3-container w3-center">
+         <p *ngFor="let file of files1" (click)="openFile(file.url)" style="color: white; font-style: italic;font-size: 20px;">{{file.name}}</p>
+        </div>
+    </div>  
+    <div class="w3-card-4">
+        <img src="./assets/imgs/ya.jpg" alt="Alps" style="width:100%;height:100%;">
+        <div class="w3-container w3-center">
+         <p *ngFor="let file of files2" (click)="openFile(file.url)" style="color: white; font-style: italic;font-size: 20px;">{{file.name}}</p>
+        </div>
+    </div>  
+    <div class="w3-card-4">
+        <img src="./assets/imgs/ak.jpg" alt="Alps" style="width:100%;height:100%;">
+        <div class="w3-container w3-center">
+         <p *ngFor="let file of files3" (click)="openFile(file.url)" style="color: white; font-style: italic;font-size: 20px;">{{file.name}}</p>
+        </div>
+    </div>  
+    <div class="w3-card-4">
+        <img src="./assets/imgs/sa.jpg" alt="Alps" style="width:100%;height:100%;">
+        <div class="w3-container w3-center">
+         <p *ngFor="let file of files4" (click)="openFile(file.url)" style="color: white; font-style: italic;font-size: 20px;">{{file.name}}</p>
+        </div>
+    </div>  
+    <div class="w3-card-4">
+        <img src="./assets/imgs/dh.jpg" alt="Alps" style="width:100%;height:100%;">
+        <div class="w3-container w3-center">
+         <p *ngFor="let file of files5" (click)="openFile(file.url)" style="color: white; font-style: italic;font-size: 20px;">{{file.name}}</p>
+        </div>
+    </div>  
+    <div class="w3-card-4">
+        <img src="./assets/imgs/na.jpg" alt="Alps" style="width:100%;height:100%;">
+        <div class="w3-container w3-center">
+         <p *ngFor="let file of files6" (click)="openFile(file.url)" style="color: white; font-style: italic;font-size: 20px;">{{file.name}}</p>
+        </div>
+    </div>  
+    <div class="w3-card-4">
+        <img src="./assets/imgs/co.jpg" alt="Alps" style="width:100%;height:100%;">
+        <div class="w3-container w3-center">
+         <p *ngFor="let file of files7" (click)="openFile(file.url)" style="color: white; font-style: italic;font-size: 20px;">{{file.name}}</p>
+        </div>
+    </div>  
+</div>
+</span>
+<br>
+
+<span class="d-block p-2 bg-dark text-white">   
+<h2>Telugu Songs</h2>
+<div class="horizontal-scroll">
+    <div class="w3-card-4">
+        <img src="./assets/imgs/bo.jpg" alt="Alps" style="width:100%; height: 100%;">
+        <div class="w3-container w3-center">
+         <p *ngFor="let file of files8" (click)="openFile(file.url)" style="color: white; font-style: italic;font-size: 20px;">{{file.name}}</p>
+        </div>
+    </div>  
+    <div class="w3-card-4">
+        <img src="./assets/imgs/sar.png" alt="Alps" style="width:100%; height:100%;">
+        <div class="w3-container w3-center">
+         <p *ngFor="let file of files9" (click)="openFile(file.url)" style="color: white; font-style: italic;font-size: 20px;">{{file.name}}</p>
+        </div>
+    </div>  
+    <div class="w3-card-4">
+        <img src="./assets/imgs/sam.jpg" alt="Alps" style="width:100%;height: 100%;">
+        <div class="w3-container w3-center">
+         <p *ngFor="let file of files10" (click)="openFile(file.url)" style="color: white; font-style: italic;font-size: 20px;">{{file.name}}</p>
+        </div>
+    </div>  
+    <div class="w3-card-4">
+        <img src="./assets/imgs/ninne.jpg" alt="Alps" style="width:100%;height: 100%;">
+        <div class="w3-container w3-center">
+         <p *ngFor="let file of files11" (click)="openFile(file.url)" style="color: white; font-style: italic;font-size: 20px;">{{file.name}}</p>
+        </div>
+    </div>  
+    <div class="w3-card-4">
+        <img src="./assets/imgs/ram.jpg" alt="Alps" style="width:100%;height: 100%;">
+        <div class="w3-container w3-center">
+         <p *ngFor="let file of files12" (click)="openFile(file.url)" style="color: white; font-style: italic;font-size: 20px;">{{file.name}}</p>
+        </div>
+    </div>  
+    
+</div>
+</span>
+<br>
+
+<span class="d-block p-2 bg-dark text-white">   
+<h2>Malayalm Songs</h2>
+<div class="horizontal-scroll">
+    <div class="w3-card-4">
+        <img src="./assets/imgs/img2.jpg" alt="Alps" style="width:100%;height: 100%;">
+        <div class="w3-container w3-center">
+         <p *ngFor="let file of files13" (click)="openFile(file.url)" style="color: white; font-style: italic;font-size: 20px;">{{file.name}}</p>
+        </div>
+    </div>  
+    <div class="w3-card-4">
+        <img src="./assets/imgs/img3.jpg" alt="Alps" style="width:100%;height:100%;">
+        <div class="w3-container w3-center">
+         <p *ngFor="let file of files14" (click)="openFile(file.url)" style="color: white; font-style: italic;font-size: 20px;">{{file.name}}</p>
+        </div>
+    </div>  
+    <div class="w3-card-4">
+        <img src="./assets/imgs/img4.jpg" alt="Alps" style="width:100%;height:100%;">
+        <div class="w3-container w3-center">
+         <p *ngFor="let file of files15" (click)="openFile(file.url)"  style="color: white; font-style: italic;font-size: 20px;">{{file.name}}</p>
+        </div>
+    </div>  
+    <div class="w3-card-4">
+        <img src="./assets/imgs/img5.jpg" alt="Alps" style="width:100%;height:100%;">
+        <div class="w3-container w3-center">
+         <p *ngFor="let file of files16" (click)="openFile(file.url)"  style="color: white; font-style: italic;font-size: 20px;">{{file.name}}</p>
+        </div>
+    </div>  
+    <div class="w3-card-4">
+        <img src="./assets/imgs/img6.jpg" alt="Alps" style="width:100%;height:100%;">
+        <div class="w3-container w3-center">
+         <p *ngFor="let file of files17" (click)="openFile(file.url)"  style="color: white; font-style: italic;font-size: 20px;">{{file.name}}</p>
+        </div>
+    </div> 
+   
+</div>
+</span>
+<br>
+<span class="d-block p-2 bg-dark text-white">   
+<h2>Other Songs</h2>
+<div class="horizontal-scroll">
+    <div class="w3-card-4">
+        <img src="./assets/new/no.jpg" alt="Alps" style="width:100%;height: 100%;">
+        <div class="w3-container w3-center">
+         <p *ngFor="let file of files13" (click)="openFile(file.url)"  style="color: white; font-style: italic;font-size: 20px;">{{file.name}}</p>
+        </div>
+    </div>  
+    <div class="w3-card-4">
+        <img src="./assets/new/no.jpg" alt="Alps" style="width:100%;height:100%;">
+        <div class="w3-container w3-center">
+         <p *ngFor="let file of files14" (click)="openFile(file.url)"  style="color: white; font-style: italic;font-size: 20px;">{{file.name}}</p>
+        </div>
+    </div>  
+    <div class="w3-card-4">
+        <img src="./assets/new/no.jpg" alt="Alps" style="width:100%;height:100%;">
+        <div class="w3-container w3-center">
+         <p *ngFor="let file of files15" (click)="openFile(file.url)"  style="color: white; font-style: italic;font-size: 20px;">{{file.name}}</p>
+        </div>
+    </div>  
+    <div class="w3-card-4">
+        <img src="./assets/new/no.jpg" alt="Alps" style="width:100%;height:100%;">
+        <div class="w3-container w3-center">
+         <p *ngFor="let file of files16" (click)="openFile(file.url)" style="color: white; font-style: italic;font-size: 20px;">{{file.name}}</p>
+        </div>
+    </div>  
+    <div class="w3-card-4">
+        <img src="./assets/new/no.jpg" alt="Alps" style="width:100%;height:100%;">
+        <div class="w3-container w3-center">
+         <p *ngFor="let file of files17" (click)="openFile(file.url)"  style="color: white; font-style: italic;font-size: 20px;">{{file.name}}</p>
+        </div>
+    </div> 
+   
+</div>
+</span>
+
+
+
+<div class="bar">
+       
+    <span style="color: white; font-size: 15px; margin-right:0px;margin-left:180px;">{{currentTime}}/</span>
+
+    <span style="color: rgb(255, 255, 255); font-size: 15px;">{{duration}}</span>
+
+<button  (click)="play()" style="background-color:black; font-size: 40px; width: 100px; border: none;color: blue;margin-left: 100px;"><i class="fa fa-play-circle"  aria-hidden="true"></i></button>
+<button  (click)="pause()" style="background-color:black; font-size: 40px; width: 100px; border: none; color: blue;margin-left: 10px;"><i class="fa fa-pause-circle" aria-hidden="true"></i></button>
+<button  (click)="stop()" style="background-color:black; font-size: 40px; width: 100px;border: none; color: blue;margin-left: 10px;"><i class="fa fa-stop-circle" aria-hidden="true" ></i></button>
+
+    <span><i class="fa fa-volume-up" aria-hidden="true" style="font-size: 30px; margin-left: 200px;color: blue;"></i> </span>
+    <input type="range" min="0" max="1" step="0.01" value="0.5" (input)="setVolume($event)" style="width:200px; margin-left: 20px;cursor:pointer; ">
+    <div>
+        <input id="myinput"  type="range"  min="0" max="200" style="font-style: bold;margin-top: 30px;"[value]="seek" (input)="setSeekTo($event)"style="width:1860px; cursor:pointer; color:black;" >
+    </div>
+</div>
+
+ </body>   
