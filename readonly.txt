@@ -1,0 +1,9 @@
+The application is created using different components:
+  -Header : for the navigation bar4
+  -Login : for authenticated login of users
+  -Registration : for users to register into the application
+  -Services : contains services including firebase as backup
+  - International, Regional and Trending : Categorizing the audio based on user activities
+  
+  The .html files stores the HTML part of the website whereas the .ts files contains the typescript code. The .css files are used to provide further enhancement
+  to the outlay of the application.
